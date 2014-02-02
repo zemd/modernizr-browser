@@ -78,6 +78,14 @@
                     docElement.className += ' ie' + parseFloat(RegExp.$2);
                 }
                 return true;
+            } else if (navigator.userAgent.match(/\s+Trident\/(\d+)\./)) {
+                re = /\s+rv:(\d+\.\d+)/;
+                /*jslint eqeq: true */
+                /*jshint eqnull: true */
+                if (re.exec(userAgent) != null) {
+                    docElement.className += ' ie' + parseFloat(RegExp.$1);
+                }
+                return true;
             }
             return false;
         });
