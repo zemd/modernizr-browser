@@ -38,11 +38,7 @@
             isAndroid = new RegExp("android").test(userAgent),
             isMobileSafari = new RegExp("apple.*mobile.*safari").test(userAgent);
 
-        isMobile = isMobileSafari &&
-            (isIphone ||
-                isIpad ||
-                isIpod ||
-                isAndroid);
+        isMobile = (isMobileSafari && (isIphone || isIpad || isIpod)) || isAndroid;
 
         if (!isMobile) {
             return false;
