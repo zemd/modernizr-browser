@@ -24,7 +24,7 @@ bower install modernizr-browser
 
 ```html
 <script src="path/to/modernizr.js"></script>
-<script src="https://unpkg.com/modernizr-browser@1.0.3/modernizr-browser.js"></script>
+<script src="https://unpkg.com/modernizr-browser@1.0.4/modernizr-browser.js"></script>
 ```
 
 
