@@ -1,6 +1,6 @@
 {
   "name": "modernizr-browser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Modernizr extension that adds classes for browser and it's version",
   "main": "modernizr-browser.js",
   "scripts": {
